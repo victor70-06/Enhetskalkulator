@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhetskalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <h1>Enhetskalkulator</h1>
+
+    <!-- VEKT -->
+    <div class="category">
+        <h2> Vekt</h2>
+
+        <div class="conversion">
+
+            <div class="side">
+                <input type="number" id="weightLeft" placeholder="Skriv tall">
+
+                <div class="buttons">
+                    <button onclick="setUnit('weight', 'left', 'mg')">mg</button>
+                    <button onclick="setUnit('weight', 'left', 'g')">g</button>
+                    <button onclick="setUnit('weight', 'left', 'kg')">kg</button>
+                </div>
+
+                <p id="weightLeftUnit">mg</p>
+            </div>
+
+            <div class="equals">=</div>
+
+            <div class="side">
+                <input type="number" id="weightRight" placeholder="Svar">
+
+                <div class="buttons">
+                    <button onclick="setUnit('weight', 'right', 'mg')">mg</button>
+                    <button onclick="setUnit('weight', 'right', 'g')">g</button>
+                    <button onclick="setUnit('weight', 'right', 'kg')">kg</button>
+                </div>
+
+                <p id="weightRightUnit">g</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- VOLUM -->
+    <div class="category">
+        <h2> Volum</h2>
+
+        <div class="conversion">
+
+            <div class="side">
+                <input type="number" id="volumeLeft" placeholder="Skriv tall">
+
+                <div class="buttons">
+                    <button onclick="setUnit('volume', 'left', 'ml')">ml</button>
+                    <button onclick="setUnit('volume', 'left', 'cl')">cl</button>
+                    <button onclick="setUnit('volume', 'left', 'dl')">dl</button>
+                    <button onclick="setUnit('volume', 'left', 'l')">l</button>
+                </div>
+
+                <p id="volumeLeftUnit">ml</p>
+            </div>
+
+            <div class="equals">=</div>
+
+            <div class="side">
+                <input type="number" id="volumeRight" placeholder="Svar">
+
+                <div class="buttons">
+                    <button onclick="setUnit('volume', 'right', 'ml')">ml</button>
+                    <button onclick="setUnit('volume', 'right', 'cl')">cl</button>
+                    <button onclick="setUnit('volume', 'right', 'dl')">dl</button>
+                    <button onclick="setUnit('volume', 'right', 'l')">l</button>
+                </div>
+
+                <p id="volumeRightUnit">l</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- LENGDE -->
+    <div class="category">
+        <h2> Lengde</h2>
+
+        <div class="conversion">
+
+            <div class="side">
+                <input type="number" id="lengthLeft" placeholder="Skriv tall">
+
+                <div class="buttons">
+                    <button onclick="setUnit('length', 'left', 'mm')">mm</button>
+                    <button onclick="setUnit('length', 'left', 'cm')">cm</button>
+                    <button onclick="setUnit('length', 'left', 'm')">m</button>
+                    <button onclick="setUnit('length', 'left', 'km')">km</button>
+                </div>
+
+                <p id="lengthLeftUnit">mm</p>
+            </div>
+
+            <div class="equals">=</div>
+
+            <div class="side">
+                <input type="number" id="lengthRight" placeholder="Svar">
+
+                <div class="buttons">
+                    <button onclick="setUnit('length', 'right', 'mm')">mm</button>
+                    <button onclick="setUnit('length', 'right', 'cm')">cm</button>
+                    <button onclick="setUnit('length', 'right', 'm')">m</button>
+                    <button onclick="setUnit('length', 'right', 'km')">km</button>
+                </div>
+
+                <p id="lengthRightUnit">cm</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -13,6 +13,11 @@
 
     <h1>Enhetskalkulator</h1>
 
+    <nav class="pages">
+        <a href="index.html" class="active">Vanlige enheter</a>
+        <a href="areal-kubikk.html">Areal (²) og kubikk (³)</a>
+    </nav>
+
     <!-- VEKT -->
     <div class="category">
         <h2> Vekt</h2>
@@ -89,22 +94,19 @@
 
     <!-- LENGDE -->
     <div class="category">
-        <h2 id="lengthTitle"> Lengde</h2>
-
-        <!-- MODUS: vanlig (1), i andre (²) eller i tredje (³) -->
-        <div class="modes">
-            <button id="mode1" class="active" onclick="setLengthMode(1)">Lengde (m)</button>
-            <button id="mode2" onclick="setLengthMode(2)">Areal (m²)</button>
-            <button id="mode3" onclick="setLengthMode(3)">Kubikk (m³)</button>
-        </div>
+        <h2> Lengde</h2>
 
         <div class="conversion">
 
             <div class="side">
                 <input type="number" id="lengthLeft" placeholder="Skriv tall">
 
-                <!-- Knappene lages av script.js -->
-                <div class="buttons" id="lengthLeftButtons"></div>
+                <div class="buttons">
+                    <button onclick="setUnit('length', 'left', 'mm')">mm</button>
+                    <button onclick="setUnit('length', 'left', 'cm')">cm</button>
+                    <button onclick="setUnit('length', 'left', 'm')">m</button>
+                    <button onclick="setUnit('length', 'left', 'km')">km</button>
+                </div>
 
                 <p id="lengthLeftUnit">mm</p>
             </div>
@@ -114,7 +116,12 @@
             <div class="side">
                 <input type="number" id="lengthRight" placeholder="Svar">
 
-                <div class="buttons" id="lengthRightButtons"></div>
+                <div class="buttons">
+                    <button onclick="setUnit('length', 'right', 'mm')">mm</button>
+                    <button onclick="setUnit('length', 'right', 'cm')">cm</button>
+                    <button onclick="setUnit('length', 'right', 'm')">m</button>
+                    <button onclick="setUnit('length', 'right', 'km')">km</button>
+                </div>
 
                 <p id="lengthRightUnit">cm</p>
             </div>

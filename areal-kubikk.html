@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areal og kubikk – Enhetskalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <h1>Enhetskalkulator</h1>
+
+    <nav class="pages">
+        <a href="index.html">Vanlige enheter</a>
+        <a href="areal-kubikk.html" class="active">Areal (²) og kubikk (³)</a>
+    </nav>
+
+    <!-- AREAL (i andre) -->
+    <div class="category">
+        <h2> Areal (i andre)</h2>
+
+        <div class="conversion">
+
+            <div class="side">
+                <input type="number" id="areaLeft" placeholder="Skriv tall">
+
+                <div class="buttons">
+                    <button onclick="setUnit('area', 'left', 'mm²')">mm²</button>
+                    <button onclick="setUnit('area', 'left', 'cm²')">cm²</button>
+                    <button onclick="setUnit('area', 'left', 'dm²')">dm²</button>
+                    <button onclick="setUnit('area', 'left', 'm²')">m²</button>
+                    <button onclick="setUnit('area', 'left', 'km²')">km²</button>
+                </div>
+
+                <p id="areaLeftUnit">cm²</p>
+            </div>
+
+            <div class="equals">=</div>
+
+            <div class="side">
+                <input type="number" id="areaRight" placeholder="Svar">
+
+                <div class="buttons">
+                    <button onclick="setUnit('area', 'right', 'mm²')">mm²</button>
+                    <button onclick="setUnit('area', 'right', 'cm²')">cm²</button>
+                    <button onclick="setUnit('area', 'right', 'dm²')">dm²</button>
+                    <button onclick="setUnit('area', 'right', 'm²')">m²</button>
+                    <button onclick="setUnit('area', 'right', 'km²')">km²</button>
+                </div>
+
+                <p id="areaRightUnit">m²</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- KUBIKK (i tredje) -->
+    <div class="category">
+        <h2> Kubikk (i tredje)</h2>
+
+        <div class="conversion">
+
+            <div class="side">
+                <input type="number" id="cubicLeft" placeholder="Skriv tall">
+
+                <div class="buttons">
+                    <button onclick="setUnit('cubic', 'left', 'mm³')">mm³</button>
+                    <button onclick="setUnit('cubic', 'left', 'cm³')">cm³</button>
+                    <button onclick="setUnit('cubic', 'left', 'dm³')">dm³</button>
+                    <button onclick="setUnit('cubic', 'left', 'm³')">m³</button>
+                    <button onclick="setUnit('cubic', 'left', 'km³')">km³</button>
+                </div>
+
+                <p id="cubicLeftUnit">cm³</p>
+            </div>
+
+            <div class="equals">=</div>
+
+            <div class="side">
+                <input type="number" id="cubicRight" placeholder="Svar">
+
+                <div class="buttons">
+                    <button onclick="setUnit('cubic', 'right', 'mm³')">mm³</button>
+                    <button onclick="setUnit('cubic', 'right', 'cm³')">cm³</button>
+                    <button onclick="setUnit('cubic', 'right', 'dm³')">dm³</button>
+                    <button onclick="setUnit('cubic', 'right', 'm³')">m³</button>
+                    <button onclick="setUnit('cubic', 'right', 'km³')">km³</button>
+                </div>
+
+                <p id="cubicRightUnit">m³</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="areal-kubikk.js"></script>
+
+</body>
+</html>
